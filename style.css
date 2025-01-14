@@ -425,136 +425,58 @@ section{
     font: 16px;
     color: white;
 }
-/* רספונסיביות עבור טאבלטים */
-@media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 1024px) {
+    html {
+        font-size: 50%;
+        /* Smaller font sizes for tablets */
     }
 
-    .home-content {
-        margin-top: 0;
-        align-items: center;
+                .home {
+                    flex-direction: column-reverse;
+                    /* Rearrange home section layout */
     }
 
     .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-content p {
-        font-size: 1.3rem;
+        font-size: 6rem;
     }
 
     .home-img img {
-        width: 80%;
-    }
-
-    .gallery h2 {
-        font-size: 5rem;
-    }
-
-    .timeline-items::before {
-        left: calc(50% - 2.5px);
-    }
-
-    .timeline-item {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .event-gallery {
-        width: 300px;
-        height: 200px;
-    }
-
-    .event-gallery img {
-        width: 280px;
-        height: 180px;
-    }
-
-    .wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .ticket {
-        padding: 20px 30px;
-        max-width: 350px;
-    }
-
-    .contact form {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .contact form .input-box input,
-    .contact form textarea {
-        padding: 2rem;
-    }
+        width: 40vw;
+            /* Scale down images */
 }
-
-/* רספונסיביות עבור סמארטפונים */
-@media (max-width: 480px) {
-    .header {
-        padding: 10px 5%;
+}
+@media (max-width: 767px) {
+    html {
+        font-size: 45%;
+        /* Further reduce font sizes for smartphones */
     }
 
-    .logo {
-        font-size: 2.5rem;
-    }
-
-    .navbar a {
-        font-size: 1.5rem;
-        margin-left: 20px;
+                .navbar {
+                    width: 100%;
+                    /* Expand the navbar to full width */
     }
 
     .home-content h1 {
         font-size: 4rem;
     }
 
-    .home-content p {
-        font-size: 1.2rem;
+    .home-img img {
+        width: 60vw;
     }
 
-    .home-img img {
+                .timeline-items {
+                    display: flex;
+                    flex-direction: column;
+                    /* Arrange timeline items vertically */
+    }
+
+    .ticket {
         width: 90%;
+            margin: 10px auto;
+            /* Center tickets on small screens */
     }
 
-    .gallery h2 {
-        font-size: 4rem;
-    }
-
-    .event-gallery {
-        width: 250px;
-        height: 180px;
-    }
-
-    .event-gallery img {
-        width: 230px;
-        height: 160px;
-    }
-
-    .wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .ticket {
-        max-width: 300px;
-    }
-
-    .contact form {
-        gap: 1rem;
-    }
-
-    .contact form .input-box input,
-    .contact form textarea {
-        padding: 1.5rem;
-    }
-
-    .footer .social a {
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
+                .footer {
+                    padding: 2rem 1rem;
     }
 }
-
