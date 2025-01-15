@@ -438,6 +438,9 @@ section {
 }
 
 @media (max-width: 1024px) {
+    section{
+        padding: 10px;
+    }
     .header {
             padding: 20px 5%;
     }
@@ -450,7 +453,7 @@ section {
                     font-size: 16px;
                     margin-left: 20px;
     }
-
+  
     .home-content h1 {
         font-size: 5.5rem;
         }
@@ -465,6 +468,7 @@ section {
 
     .home-img img {
         width: 40vw;
+    
     }
         .timeline-items {
             flex-direction: column;
@@ -492,7 +496,9 @@ section {
                 font-size: 14px;
                 margin-left: 15px;
             }
-        
+            .home {
+                flex-direction: column;
+            }
             .home-content h1 {
                 font-size: 4.5rem;
             }
@@ -511,6 +517,7 @@ section {
         
             .timeline-items {
                 flex-direction: column;
+                padding: 10px;
             }
         
             .ticket {
@@ -529,11 +536,13 @@ section {
     font-size: 1.6rem;
     }
 
-                .navbar a {
-                    font-size: 12px;
-                    margin-left: 10px;
-    }
-
+.navbar a {
+    font-size: 12px;
+    margin-left: 10px;
+}
+.home {
+    flex-direction: column;
+}
     .home-content h1 {
         font-size: 3.5rem;
         }
@@ -550,16 +559,17 @@ section {
         width: 60vw;
     }
 
-                .timeline-items {
+    .timeline-items {
         flex-direction: column;
+        padding: 10px;
     }
 
     .ticket {
         max-width: 100%;
     }
 
-                .wrapper {
-                    grid-template-columns: 1fr;
+    .wrapper {
+        grid-template-columns: 1fr;
     }
 }
 ;
