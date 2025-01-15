@@ -514,12 +514,15 @@ section {
             .home-img img {
                 width: 50vw;
             }
-        
+            .gallery{
+                max-width: 750px;
+            }
             .timeline-items {
                 flex-direction: column;
-                padding: 10px;
             }
-        
+            .timeline-item:nth-child(even) {
+                padding-left: calc(50% - 175px);
+            }
             .ticket {
                 max-width: 100%;
             }
