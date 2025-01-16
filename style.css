@@ -470,6 +470,7 @@ section {
     }
     section{
         padding: 10rem 3% 2rem;
+        flex-direction: column;
     }
     .timeline-items::before{
         left: 7px;
@@ -524,8 +525,11 @@ section {
         flex-direction: column;
         margin: 5rem 4rem;
     }
-    .home-content h3{
+    .home-content h1{
         font-size: 2.6rem;
+    }
+    .text-animation{
+        font-size: 2rem;
     }
     .home-content h1{
         font-size: 5rem;
