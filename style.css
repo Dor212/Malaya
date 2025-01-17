@@ -299,28 +299,6 @@ section {
     margin: 0 auto;
     border-radius: 5rem;
 }
-.event-gallery1 {
-    width: 400px;
-    height: 200px;
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    padding: 8px 25px;
-}
-.event-gallery1:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color);
-}
-.event-gallery1 img {
-    width: 350px;
-    height: 180px;
-    margin: 0 auto;
-    border-radius: 5rem;
-}
-
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -468,10 +446,6 @@ section {
     header{
         padding: 2rem 3%;
     }
-    section{
-        padding: 10rem 3% 2rem;
-        flex-direction: column;
-    }
     .timeline-items::before{
         left: 7px;
     }
@@ -543,4 +517,61 @@ section {
         width: 56vw;
     }
 
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 2%;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+    }
+    .heading{
+        font-size: 3.5rem;
+    }
+    .event-date{
+        font-size: 1.8rem;
+    }
+    .timeline-items {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .event-gallery {
+        width: 250px;
+    }
+    .event-gallery img {
+        width: 200px;
+    }
+    .ticket {
+        max-width: 100%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
 }
