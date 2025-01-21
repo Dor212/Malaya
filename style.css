@@ -184,7 +184,7 @@ section {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
     border-radius: 4rem;
     font-size: 1.6rem;
     color: #000;
@@ -196,7 +196,7 @@ section {
 }
 .btn:hover {
     transform: scale(1.3);
-    box-shadow: 0 0 50px var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
 }
 .home-img {
     border-radius: 50%;
@@ -355,14 +355,38 @@ section {
     width: 15rem;
     border-radius: 50%;
     border: 1px solid var(--main-color);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
     margin-bottom: 5px;
 }
 .ticket h2 {
     font-size: 2.8rem;
+    margin-top: 5px;
 }
-.ticket p {
-    font-size: 1.3rem;
+.rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rating a {
+    display: flex;
+    justify-content: center;
+    
+}
+.rating a i{
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.rating span{
+    margin-top: 6px;
+    font-size: 1.5rem;
+    color: gray;
 }
 .contact {
     background-color: var(--bg-color);
